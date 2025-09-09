@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>5 ISE 02</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #fdfdfd;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h3 {
+      margin: 5px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 95%;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #e6e6e6;
+      padding: 12px;
+      text-align: center;
+      font-size: 14px;
+      word-wrap: break-word;
+    }
+
+    th {
+      color: white;
+      font-size: 15px;
+    }
+
+    /* Period headers */
+    th:nth-child(2) { background: #00b09b; }
+    th:nth-child(3) { background: #ff6f61; }
+    th:nth-child(4) { background: #f9c74f; color:#333; }
+    th:nth-child(5) { background: #6a4c93; }
+    th:nth-child(6) { background: #f3722c; }
+    th:nth-child(7) { background: #43aa8b; }
+    th:nth-child(8) { background: #f8961e; }
+    th:nth-child(9) { background: #577590; }
+    th:nth-child(10){ background: #ffb4a2; color:#333; }
+    th:nth-child(11){ background: #90be6d; }
+
+    /* Alternate row background */
+    tr:nth-child(even) td {
+      background: #fafafa;
+    }
+
+    /* Day labels */
+    td:first-child {
+      font-weight: bold;
+      color: white;
+    }
+    tr:nth-child(2) td:first-child { background: #6a4c93; }
+    tr:nth-child(3) td:first-child { background: #00b09b; }
+    tr:nth-child(4) td:first-child { background: #f3722c; }
+    tr:nth-child(5) td:first-child { background: #ff6f61; }
+    tr:nth-child(6) td:first-child { background: #577590; }
+
+    /* Hover effect */
+    td:hover {
+      background: #e8f9ff;
+      transition: 0.3s;
+    }
+
+    /* RESPONSIVENESS */
+    @media (max-width: 900px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      table {
+        box-shadow: none;
+        border: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      td, th {
+        border: none;
+        padding: 8px;
+        text-align: left;
+      }
+
+      td:first-child {
+        text-align: center;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>5-ISE 02</h1>
+  <h3>Presidency University, Itaglpura, Yelahanka, Bengaluru</h3>
+  <hr><br>
+
+  <!-- Your original table (structure untouched) -->
+  <table cellspacing="1" cellpadding="15" border="1" align="center">
+    <tr>
+      <th></th>
+      <th><h2>1</h2><p>8.50-9.45</p></th>
+      <th><h2>2</h2><p>9.45-10.40</p></th>
+      <th><h2>BREAK</h2><p>10.40-10.50</p></th>
+      <th><h2>3</h2><p>10.50-11.45</p></th>
+      <th><h2>4</h2><p>11.45-12.35</p></th>
+      <th><h2>LUNCH</h2><p>12.35-1.25</p></th>
+      <th><h2>6</h2><p>1.25-2.20</p></th>
+      <th><h2>BREAK</h2><p>2.20-2.30</p></th>
+      <th><h2>7</h2><p>2.30-3.25</p></th>
+      <th><h2>8</h2><p>3.25-4.15</p></th>
+    </tr>
+
+    <!-- SAME STRUCTURE as you had -->
+    <tr>
+      <td>MONDAY</td>
+      <td colspan="2">T Ramesh<p>CSE2067_P</p>LTL08</td>
+      <td rowspan="5" align="center"><h3>B<br>R<br>E<br>A<br>K</h3></td>
+      <td>S Thabassum Khan<p>CSE2021</p><p>UT05</p></td>
+      <td>Devi S<p>CSE3001</p><p>UT05</p></td>
+      <td rowspan="5" align="center"><h3>L<br>U<br>N<br>C<br>H</h3></td>
+      <td>T Ramesh<p>CSE2067</p><p>UT05</p></td>
+      <td rowspan="5" align="center"><h3>B<br>R<br>E<br>A<br>K</h3></td>
+      <td colspan="2"><p>PPS4006</p>UT05</td>
+    </tr>
+
+    <tr>
+      <td>TUESDAY</td>
+      <td colspan="2">Amarnath J L<p>CSE3209_P</p>LTL08</td>
+      <td></td>
+      <td>Yamanappa<p>CSE3071</p><p>UT05</p></td>
+      <td>C Vairavel<p>CSE3342</p><p>UT05</p></td>
+      <td>Amarnath J L<p>CSE3209</p><p>UT05</p></td>
+      <td>S Thabassum Khan<p>CSE2021</p><p>UT05</p></td>
+    </tr>
+
+    <tr>
+      <td>WEDNESDAY</td>
+      <td>Devi S<p>CSE3001</p><p>UT05</p></td>
+      <td></td>
+      <td colspan="2">C Vairavel<p>CSE3342_P</p><p>LTL01</p></td>
+      <td>Amarnath J L<p>CSE3209</p><p>UT05</p></td>
+      <td></td>
+      <td>S Thabassum Khan<p>CSE2021</p><p>UT05</p></td>
+    </tr> 
+
+    <tr>
+      <td>THURSDAY</td>
+      <td colspan="2">Devi S<p>CSE3001_P</p><p>Div04</p></td>
+      <td></td>
+      <td>Arun Kumar S<p>CSE3343</p><p>Ut05</p></td>
+      <td>T Ramesh<p>CSE2067</p><p>Ut05</p></td>
+      <td>Yamanappa<p>CSE3071</p><p>Ut05</p></td>
+      <td colspan="2">Arun Kumar S<p>CSE3342_P</p><p>LTL08</p></td>
+    </tr> 
+
+    <tr>
+      <td>FRIDAY</td>
+      <td colspan="2">C Vairavel<p>CSE3342_P</p><p>LTL01</p></td>
+      <td colspan="2">Yamanappa<p>CSE3071_P</p><p>LFL02</p></td>
+      <td>Arun Kumar S<p>CSE3343</p><p>Ut05</p></td>
+      <td colspan="2">OOP-TRAINER01<p>CSE3216</p><p>LTL08</p></td>
+    </tr>
+  </table>
+ 
+  <footer>
+  © 2023 Sachitha S. All Rights Reserved.
+</footer>
+
+
+
+
+
+</body>
+</html>
