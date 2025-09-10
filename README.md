@@ -19,9 +19,8 @@ Features color-coded periods, hover effects, and a mobile-friendly layout for ea
 
 ---
 
-## 🚀 Live Demo
+ ** 🚀 Live Demo:** [View Timetable Online](https://sachithas287-crypto.github.io/5-ISE02-Timetable/)
 
-👉 [GitHub Pages Demo](https://sachithas287-crypto.github.io/5-ISE02-Timetable/) *(If not yet published, follow the GitHub Pages steps below.)*
 
 ---
 
